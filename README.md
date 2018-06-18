@@ -140,10 +140,10 @@ Unfortunately it's not yet possible in Hugo to limit the Table of Content depth 
 
 ## Licenses
 
-This theme is distributed under the MIT license. You can see the details [here](LICENSE)
+This theme is distributed under the MIT license. You can see the details [here](LICENSE.md)
 
 ### External Resources
-- [Normalize.css by Nicolas Gallagher](https://github.com/necolas/normalize.css) under license MIT
+- [Normalize.css by Nicolas Gallagher](https://github.com/necolas/normalize.css) under license [MIT](https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
 - [Dark Mode Icon by Rami McMin](https://www.flaticon.com/free-icon/moon-phase-outline_53381) under license [CC 3.0 BY](https://creativecommons.org/licenses/by/3.0/)
 - [Source Sans Pro font by Adobe](https://fonts.google.com/specimen/Source+Sans+Pro) under the [Open Font License](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL_web)
 - Various icons (menu, permalinks, external links etc) from [Font-Awesome](https://fontawesome.com/) built into a custom bundle using [Fontello](http://fontello.com/)
