@@ -2,7 +2,7 @@
 
 ![Preview](github_assets/light_dark.png)
 
-This is a port of the Sphinx theme of the same name I made for the French RPG Maker community RPG Maker Alliance (RMA). Even though Hugo is mostly used for blogs, it does documentations pretty well!
+This is a port of the [Sphinx theme of the same name](https://github.com/Princesseuh/sphinx-royal-theme) I made for the French RPG Maker community RPG Maker Alliance (RMA). Even though Hugo is mostly used for blogs, it does documentations pretty well!
 
 The theme is responsive and should work on every platform. However it is centered and has a fixed max width. The theme is currently available in English and French (see the i18n folder)
 
@@ -143,6 +143,7 @@ Unfortunately it's not yet possible in Hugo to limit the Table of Content depth 
 This theme is distributed under the MIT license. You can see the details [here](LICENSE)
 
 ### External Resources
-- [Dark Mode Icon by Rami McMin](https://www.flaticon.com/free-icon/moon-phase-outline_53381#term=Moon&page=2&position=43) under license [CC 3.0 BY](https://creativecommons.org/licenses/by/3.0/)
+- [Normalize.css by Nicolas Gallagher](https://github.com/necolas/normalize.css) under license MIT
+- [Dark Mode Icon by Rami McMin](https://www.flaticon.com/free-icon/moon-phase-outline_53381) under license [CC 3.0 BY](https://creativecommons.org/licenses/by/3.0/)
 - [Source Sans Pro font by Adobe](https://fonts.google.com/specimen/Source+Sans+Pro) under the [Open Font License](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL_web)
 - Various icons (menu, permalinks, external links etc) from [Font-Awesome](https://fontawesome.com/) built into a custom bundle using [Fontello](http://fontello.com/)

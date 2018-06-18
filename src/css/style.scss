@@ -6,6 +6,22 @@
 @include font-face("Source Sans Pro", "../assets/fonts/source-sans-pro-v11-latin-600", 600, "Source Sans Pro SemiBold" "SourceSansPro-SemiBold");
 @include font-face("Source Sans Pro", "../assets/fonts/source-sans-pro-v11-latin-700", 700, "Source Sans Pro Bold" "SourceSansPro-Bold");
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #eaeaea;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c7c7c7;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #b1b1b1
+}
+
 body, header, #sidebar a, #page-content code, .highlighted, td, th, li, hr, #page-content footer {
     transition: color 0.2s ease, background 0.2s ease, border-color 0.2s ease;
 }

@@ -3,20 +3,19 @@ body.dark {
     color: #bfccc7;
 }
 
+.dark::-webkit-scrollbar-track {
+    background: #2b2b2b;
+}
+
+.dark::-webkit-scrollbar-thumb {
+    background: #4c4c4c;
+}
+
+.dark::-webkit-scrollbar-thumb:hover {
+    background: #5f5f5f;
+}
 
 .dark {
-    ::-webkit-scrollbar-track {
-        background: #272727;
-    }
-
-    ::-webkit-scrollbar-thumb {
-        background: #4c4c4c;
-    }
-
-    ::-webkit-scrollbar-thumb:hover {
-        background: #5f5f5f;
-    }
-
     header {
         background: #272727;
         border-bottom-color: #1e1e1e;
