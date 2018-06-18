@@ -1,4 +1,4 @@
-@mixin font-face($name, $path, $weight: null, $locals: "") {
+@mixin font-face($name, $path, $weight: null, $locals: "", $display: "") {
 	$localsurl: null;
 
 	@if $locals != "" {
@@ -12,6 +12,9 @@
 		font-weight: $weight;
 		src: $localsurl url(quote($path)+".woff2") format("woff2"),
 				url(quote($path)+".woff") format("woff");
+	@if $display != "" {
+		font-display: unquote($display);
+	}
 	}
 }
 

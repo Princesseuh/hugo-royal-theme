@@ -2,9 +2,9 @@
 @import '_mixins';
 
 @include font-face("font-awesome-royal", "../assets/fonts/font-awesome-royal", normal);
-@include font-face("Source Sans Pro", "../assets/fonts/source-sans-pro-v11-latin-regular", 400, "Source Sans Pro Regular" "SourceSansPro-Regular");
-@include font-face("Source Sans Pro", "../assets/fonts/source-sans-pro-v11-latin-600", 600, "Source Sans Pro SemiBold" "SourceSansPro-SemiBold");
-@include font-face("Source Sans Pro", "../assets/fonts/source-sans-pro-v11-latin-700", 700, "Source Sans Pro Bold" "SourceSansPro-Bold");
+@include font-face("Source Sans Pro", "../assets/fonts/source-sans-pro-v11-latin-regular", 400, "Source Sans Pro Regular" "SourceSansPro-Regular", "swap");
+@include font-face("Source Sans Pro", "../assets/fonts/source-sans-pro-v11-latin-600", 600, "Source Sans Pro SemiBold" "SourceSansPro-SemiBold", "swap");
+@include font-face("Source Sans Pro", "../assets/fonts/source-sans-pro-v11-latin-700", 700, "Source Sans Pro Bold" "SourceSansPro-Bold", "swap");
 
 ::-webkit-scrollbar {
     width: 10px;
