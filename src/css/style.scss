@@ -172,6 +172,7 @@ header {
     height: 100%;
     max-width: 100%;
     box-sizing: border-box;
+    min-width: 0;
 
     h3, h4 {
         margin-top: 6px;
@@ -184,7 +185,7 @@ header {
     a {
         border-bottom: 1px solid #e4f6f4;
         padding-bottom: 1px;
-        transition: border-color 0.1s ease, color 0.1s ease;
+        transition: border-color 0.12s ease, color 0.12s ease;
 
         &.external::after {
             content: "";
@@ -263,7 +264,7 @@ header {
     }
 
     h4 {
-        color: #4c4c4c;
+        color: #3c3c3c;
         font-size: 1.1em;
     }
 
@@ -290,25 +291,19 @@ header {
         margin-top: 6px;
     }
 
-    .highlight {
-        max-width: 830px;
+    code {
         font-family: Consolas, "Lucida Sans Typewriter", monospace;
         background:#202020;
         color:#d0d0d0;
-        font-size: 90%;
+        font-size: 0.9em;
         overflow-x: auto;
         border-radius: 4px;
-        margin-bottom: 12px;
 
         pre {
             margin: 0;
         }
-    }
 
-    code {
-        @extend .highlight;
         padding: 2px 5px;
-        margin-bottom: 0;
     }
 
     pre > code {
