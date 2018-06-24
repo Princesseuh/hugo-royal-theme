@@ -12,8 +12,8 @@
             </a>
         </h1>
         <nav role="navigation" class="pull-left">
-            {{- range .Site.Menus.global -}}
-                {{- partial "menu-item.html" (dict "Page" . "parent" "header") -}}
+            {{ range .Site.Menus.global -}}
+            {{ partial "menu-item.html" (dict "Page" . "parent" "header") -}}
             {{- end -}}
         </nav>
         <div id="toggle-darkmode" class="pull-right no-js"><span id="darkmode-icon"></span></div>

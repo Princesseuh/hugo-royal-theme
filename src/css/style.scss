@@ -69,6 +69,7 @@ body {
     line-height: 1.5;
     font-size: 16px;
     background-color: #fbfbfb;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -175,7 +176,7 @@ header {
     min-width: 0;
 
     h3, h4 {
-        margin-top: 6px;
+        margin-top: 10px;
     }
 
     h1+p, h2+p, h3+p, h4+p, h5+p {
@@ -216,16 +217,22 @@ header {
         margin: 0 auto;
         display: block;
         text-align: center;
+    }
 
-        +figcaption {
-            text-align: center;
-            font-size: 80%;
-            color: #73777b;
+    video {
+        max-width: 100%;
+        margin: 0 auto;
+        display: block;
+    }
 
-            p {
-                margin-top: 6px;
-                margin-bottom: 0;
-            }
+    figcaption {
+        text-align: center;
+        font-size: 80%;
+        color: #73777b;
+
+        p {
+            margin-top: 6px;
+            margin-bottom: 0;
         }
     }
 

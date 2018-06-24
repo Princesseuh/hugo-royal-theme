@@ -20,7 +20,8 @@ document.addEventListener("DOMContentLoaded", function() {
         body.classList.toggle("sidebar-open");
     });
 
-    for (var links = document.links, i = 0, a; a = links[i]; i++) {
+    coreLinks = document.getElementById("core").getElementsByTagName('a');
+    for (var i = 0, a; a = coreLinks[i]; i++) {
         if (a.host !== location.host) {
                 a.target = '_blank';
                 a.rel = 'noopener';

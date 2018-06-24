@@ -6,3 +6,9 @@ other = "Sur cette page"
 
 [lastupdated]
 other = "Dernière mise à jour le"
+
+[404notfoundtitle]
+other = "Erreur 404 : Page indisponible"
+
+[404notfoundcontent]
+other = "Cette page n'existe pas, a été déplacée, ou bien elle est temporairement indisponible.\n\nEssayez de rafraichir la page ou [retournez à l'accueil](/)"

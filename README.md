@@ -8,6 +8,7 @@ The theme is responsive and should work on every platform. However it is centere
 
 You can see a live example running at [wiki.rpgmakeralliance.com](https://wiki.rpgmakeralliance.com)
 
+
 ## Installation
 
 Clone the repo inside the themes folder of your Hugo installation like so :
@@ -17,23 +18,25 @@ cd themes
 git clone https://github.com/princesseuh/hugo-royal-theme
 ```
 
-Alternatively you can add the theme as a [Git Submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules), making it easier for other users to pull your repo.
+Alternatively you can add the theme as a [Git Submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules), making it easier for other users to pull your repo
 
-Then in your site's `config.toml`, set the theme like so :
+Then in your site's `config.toml`, set the theme :
 
 ```toml
 theme = "hugo-royal-theme"
 ```
 
-And there you go! You should now have a working installation using this beautiful theme. Check below for more information on how to enable and customize all of its features.
+And there you go! You should now have a working installation using this beautiful theme. Check below for more information on how to enable and customize all of its features
+
 
 ## Configuration
 
 This theme does not require any specific setting to work, however certain features are disabled if certain files or parameters are missing. Unlike the Sphinx version, there's no RMA branded assets included in the theme
 
+
 ### Menus
 
-Royal uses [Hugo's Menus](https://gohugo.io/content-management/menus/) feature to generate the header and left sidebar menus (the right sidebar is automatically generated from the table of content)
+Royal uses [Hugo's Menus](https://gohugo.io/content-management/menus/) feature to generate the header and left sidebar menus (the right sidebar however is automatically generated from the table of content)
 
 For the header, the menu is called `global`. You can populate it by editing your `config.toml` file like so :
 
@@ -49,14 +52,13 @@ name = "Twitter"
 weight = 2
 identifier = "twitter"
 url = "https://twitter.com/VanillaHoys"
-
 ```
 
 The header menu currently doesn't support parents and submenus.
 
 For the left sidebar, the menu is called `docs`. Like for the header, you can populate it by editing the `config.toml`, however only childs will actually be clickable (there is currently no way to change this)
 
-So for instance, to add a link through the config file you need to do it like so :
+So for instance, to add a link through the config file you need to do it like this :
 
 ```toml
 [[menu.docs]]
@@ -78,13 +80,30 @@ Which will result in this :
 To add a menu entry through a page's front matter, see [this page](https://gohugo.io/content-management/menus/#add-content-to-menus) from the Hugo documentation
 
 
+#### Removing the trailing slash in URLs (Experimental)
+
+Hugo currently does not support natively removing the trailing slash from URLs. However, Go's templates are powerful enough to be able to do it ourselves!
+
+To try it out, add
+```toml
+[params]
+removeTrailingSlash = true
+```
+
+to your `config.toml`.
+
+Take note that this will also affect external links and canonical url meta tags. However it won't doesn't touch the ref and relref shortcodes, you'll have to make your own ([Example](https://github.com/rpgmakeralliance/wiki/blob/master/layouts/shortcodes/ref.html))
+
+
 ### Adding a logo
 
-Simply put an image called `logo.png` in `{SITE_ROOT}/static/assets/`. The theme will automatically use it for the header instead of writing the website name
+Put an image called `logo.png` in `{SITE_ROOT}/static/assets/`. Royal will automatically use it for the header instead of writing the website name
+
 
 ### Adding a favicon
 
-Like for the logo, Royal checks if a file called `favicon.png` exists in `{SITE_ROOT}/static/assets/`. The theme currently does not support having multiple formats and sizes for favicon unfortunately
+Like for the logo, Royal checks if a file called `favicon.png` exists in `{SITE_ROOT}/static/assets/`. Royal currently does not support having multiple formats and sizes for favicon
+
 
 ### "Edit this page" link
 
@@ -116,21 +135,27 @@ In your site `config.toml` file, simply add
 twitter = "YOUR_TWITTER_HANDLE"
 ```
 
+Don't add the at (@) sign, Royal will add it automatically
+
 ## Page Parameters
 
 A few parameters are supported to disable certain features or change the opengraph icon on a per page basis
+
 
 ### Disable the "Edit this Page" link
 
 Add `editthispage: false` to your page's front matter
 
+
 ### Disable the right sidebar
 
 Add `onthispage: false` to your page's front matter
 
+
 ### Specify an OpenGraph icon
 
 Add `og_image: "{IMAGE_URL}"` to your page's front matter
+
 
 ### Limit Table of Content depth
 
@@ -138,12 +163,13 @@ Add `tocmaxdepth: {DEPTH}` to your page's front matter. Only values from 1 to 5 
 
 Unfortunately it's not yet possible in Hugo to limit the Table of Content depth natively so we had to do it through CSS (which is why it's limited to specific values)
 
+
 ## Licenses
 
 This theme is distributed under the MIT license. You can see the details [here](LICENSE.md)
 
 ### External Resources
-- [Normalize.css by Nicolas Gallagher](https://github.com/necolas/normalize.css) under license [MIT](https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
-- [Dark Mode Icon by Rami McMin](https://www.flaticon.com/free-icon/moon-phase-outline_53381) under license [CC 3.0 BY](https://creativecommons.org/licenses/by/3.0/)
+- [Normalize.css by Nicolas Gallagher](https://github.com/necolas/normalize.css) under the [MIT](https://github.com/necolas/normalize.css/blob/master/LICENSE.md) license
+- [Dark Mode Icon by Rami McMin](https://www.flaticon.com/free-icon/moon-phase-outline_53381) under the [CC 3.0 BY](https://creativecommons.org/licenses/by/3.0/) license
 - [Source Sans Pro font by Adobe](https://fonts.google.com/specimen/Source+Sans+Pro) under the [Open Font License](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL_web)
 - Various icons (menu, permalinks, external links etc) from [Font-Awesome](https://fontawesome.com/) built into a custom bundle using [Fontello](http://fontello.com/)

@@ -6,3 +6,9 @@ other = "On this page"
 
 [lastupdated]
 other = "Last updated on"
+
+[404notfoundtitle]
+other = "Error 404 : Page not found"
+
+[404notfoundcontent]
+other = "This page doesn't exist, was moved, or is temporarily unavailable.\n\nTry to refresh the page or [return to the homepage](/)"
