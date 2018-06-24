@@ -188,6 +188,10 @@ header {
         padding-bottom: 1px;
         transition: border-color 0.12s ease, color 0.12s ease;
 
+        &:hover {
+            border-bottom-color: #fc8c47;
+        }
+
         &.external::after {
             content: "";
             font-family: "font-awesome-royal";

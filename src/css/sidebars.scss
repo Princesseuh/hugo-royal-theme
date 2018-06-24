@@ -61,6 +61,10 @@
 
     a {
         color: #8f9295;
+
+        &:hover {
+            color:darken(#8f9295, 20%)
+        }
     }
 
     #local-toc {
@@ -81,10 +85,15 @@
     @extend %sidebar-shared;
 
     #edit-this-page {
+        color: #6c6c6c;
         font-weight: 600;
 
         &+.caption {
             margin-top: 15px;
+        }
+
+        &:hover {
+            color:darken(#6c6c6c, 15%);
         }
     }
 

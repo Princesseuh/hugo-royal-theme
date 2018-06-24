@@ -23,10 +23,6 @@
 }
 
 @media only screen and (max-width: 600px) {
-    #article-body {
-        font-size: 100%;
-    }
-
     ul {
         padding-left: 20px;
     }
@@ -41,6 +37,12 @@
 
     body.sidebar-open {
         overflow-y: hidden;
+    }
+
+    figure.align-right, figure.align-left {
+        padding-left: 0;
+        padding-right: 0;
+        float: none;
     }
 
     #sidebar {
@@ -66,7 +68,7 @@
 
 
     #sidebar.open {
-        width: 102%;
+        width: calc(100% + 10px);
         overflow-y: scroll;
         z-index: 1;
     }

@@ -76,12 +76,48 @@ body.dark {
         }
     }
 
-    #sidebar a {
-        color: #d2d2d2;
+    #sidebar {
+        .caption {
+            color: #d3d4d4;
+        }
+
+        a {
+            color: #bcbcbc;
+            transition: none;
+
+
+            &.current {
+                color: #ef9762;
+
+                &:hover {
+                    color: #ef9762;
+                }
+            }
+
+            &:hover {
+                color: #e0e0e0;
+            }
+        }
     }
 
-    #sidebar a.current {
-        color: #ef9762;
+    #local-sidebar {
+        .caption {
+            color: #d3d4d4;
+        }
+
+        a {
+            &:hover {
+                color:lighten(#8f9295, 20%);
+            }
+        }
+
+        #edit-this-page {
+            color: #bcbcbc;
+
+            &:hover {
+                color:lighten(#bcbcbc, 15%);
+            }
+        }
     }
 
     .search li {
