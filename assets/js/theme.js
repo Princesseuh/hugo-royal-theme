@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     content = document.getElementById("page-content")
-    for (var level = 0; level <= 4; level++) {
+    for (var level = 2; level <= 5; level++) {
         addHeaderLinks(level, content);
     }
 
