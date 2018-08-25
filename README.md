@@ -11,7 +11,7 @@ You can see a live example running at [wiki.rpgmakeralliance.com](https://wiki.r
 
 ## Installation
 
-Clone the repo inside the themes folder of your Hugo installation like so :
+**Royal require the extended version of Hugo**. Clone the repo inside the themes folder of your Hugo installation like so :
 
 ```bash
 cd themes
@@ -26,7 +26,7 @@ Then in your site's `config.toml`, set the theme :
 theme = "hugo-royal-theme"
 ```
 
-And there you go! You should now have a working installation using this beautiful theme. Check below for more information on how to enable and customize all of its features
+And there you go! You should now have a working installation using this beautiful theme. Check below for more information on how to enable and customize all of its features.
 
 
 ## Configuration
@@ -92,7 +92,7 @@ removeTrailingSlash = true
 
 to your `config.toml`.
 
-Take note that this will also affect external links and canonical url meta tags. However it won't doesn't touch the ref and relref shortcodes, you'll have to make your own ([Example](https://github.com/rpgmakeralliance/wiki/blob/master/layouts/shortcodes/ref.html))
+Take note that this will also affect external links and canonical url meta tags. However it won't touch the ref and relref shortcodes, you'll have to make your own. ([Example](https://github.com/rpgmakeralliance/wiki/blob/master/layouts/shortcodes/ref.html))
 
 
 ### Adding a logo

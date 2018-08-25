@@ -7,15 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta itemprop="name" content="{{ .Title }}" />
     <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}" />
+    <meta name="theme-color" content="#f38e50">
 
     {{ if fileExists "static/assets/favicon.png" -}}
     <link href='{{ "assets/favicon.png" | relURL }}' rel="icon">
     {{- end }}
 
-    <link href='{{ "css/style.min.css" | relURL }}' rel='stylesheet' type="text/css" />
+    {{- $style := resources.Get "sass/style.scss" | toCSS | minify | fingerprint }}
+    <link href='{{ $style.Permalink }}' rel='stylesheet' type="text/css" />
     {{ partial "add-css.html" . }}
-    <script src='{{ "js/theme.min.js" | relURL }}'></script>
-    {{ partial "add-js.html" . }}
+    {{ $js := resources.Get "js/theme.js" | minify | fingerprint }}
+    <script src='{{ $js.Permalink }}'></script>
+    {{- partial "add-js.html" . }}
 
     <meta name="twitter:card" content="summary" />
     {{ if isset .Site.Social "twitter" }}<meta name="twitter:site" content="@{{ .Site.Social.twitter }}" />{{ end }}
