@@ -13,6 +13,9 @@
 {{- if fileExists "static/assets/favicon-64x64.png" }}
     <link rel="icon" type="image/png" href='{{ "assets/favicon-64x64.png" | relURL }}' sizes="64x64">
 {{- end }}
+{{- if fileExists "static/assets/favicon-96x96.png" }}
+    <link rel="icon" type="image/png" href='{{ "assets/favicon-96x96.png" | relURL }}' sizes="96x96">
+{{- end }}
 {{- if fileExists "static/assets/apple-touch-icon.png" }}
     <link rel="apple-touch-icon" href='{{ "assets/apple-touch-icon.png" | relURL }}' sizes="180x180">
 {{- end }}
