@@ -1,0 +1,18 @@
+{{- if fileExists "static/assets/favicon.png" -}}
+    <link rel="icon" type="image/png" href='{{ "assets/favicon.png" | relURL }}'>
+{{- end }}
+{{- if fileExists "static/assets/favicon-16x16.png" }}
+    <link rel="icon" type="image/png" href='{{ "assets/favicon-16x16.png" | relURL }}' sizes="16x16">
+{{- end }}
+{{- if fileExists "static/assets/favicon-32x32.png" }}
+    <link rel="icon" type="image/png" href='{{ "assets/favicon-32x32.png" | relURL }}' sizes="32x32">
+{{- end }}
+{{- if fileExists "static/assets/favicon-48x48.png" }}
+    <link rel="icon" type="image/png" href='{{ "assets/favicon-48x48.png" | relURL }}' sizes="48x48">
+{{- end }}
+{{- if fileExists "static/assets/favicon-64x64.png" }}
+    <link rel="icon" type="image/png" href='{{ "assets/favicon-64x64.png" | relURL }}' sizes="64x64">
+{{- end }}
+{{- if fileExists "static/assets/apple-touch-icon.png" }}
+    <link rel="apple-touch-icon" href='{{ "assets/apple-touch-icon.png" | relURL }}' sizes="180x180">
+{{- end }}
