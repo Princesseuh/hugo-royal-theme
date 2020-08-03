@@ -6,7 +6,7 @@ This is a port of the [Sphinx theme of the same name](https://github.com/Princes
 
 The theme is responsive and should work on every platform. However it is centered and has a fixed max width. The theme is currently available in English and French (see the i18n folder)
 
-You can see a live example running at [wiki.rpgmakeralliance.com](https://wiki.rpgmakeralliance.com)
+You can see a live example running at [wiki.gamedevalliance.com](https://wiki.gamedevalliance.com)
 
 
 ## Installation
