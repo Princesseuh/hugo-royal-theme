@@ -8,10 +8,9 @@
     <meta itemprop="name" content="{{ .Title }}" />
     <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}" />
     <meta name="theme-color" content="#f38e50">
+    <meta name="msapplication-TileColor" content="#f38e50">
 
-    {{ if fileExists "static/assets/favicon.png" -}}
-    <link href='{{ "assets/favicon.png" | relURL }}' rel="icon">
-    {{- end }}
+    {{ partial "favicons.html" . }}
 
     {{- $style := resources.Get "sass/style.scss" | toCSS | minify | fingerprint }}
     <link href='{{ $style.Permalink }}' rel='stylesheet' type="text/css" />
